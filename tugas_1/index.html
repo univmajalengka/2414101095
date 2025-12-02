@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wisata Sanghyang Dora - Lewimunding Majalengka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', "ui-sans-serif", "system-ui"],
+            },
+            colors: {
+              brand: {
+                50: "#eef9ff",
+                100: "#cfefff",
+                200: "#9cdfff",
+                300: "#63c9ff",
+                400: "#2eabff",
+                500: "#148cef",
+                600: "#0b6ecd",
+                700: "#0e57a4",
+                800: "#104a85",
+                900: "#113b68",
+              },
+            },
+            boxShadow: {
+              glow: "0 15px 50px rgba(20,140,239,0.25)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      body {
+        font-family: "Plus Jakarta Sans", system-ui, -apple-system, BlinkMacSystemFont,
+          "Segoe UI", sans-serif;
+        background-color: #030712;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-950 text-slate-100 antialiased">
+    <header class="relative isolate overflow-hidden bg-slate-900">
+      <div class="absolute inset-0 opacity-60">
+        <div
+          class="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(20,140,239,0.35),_transparent)]"
+        ></div>
+      </div>
+      <div class="relative z-10 mx-auto flex max-w-6xl flex-col gap-8 px-6 py-8">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.35em] text-brand-200">Lewimunding · Majalengka</p>
+            <h1 class="mt-2 text-3xl font-semibold text-white sm:text-4xl">
+              Desa Wisata Sanghyang Dora
+            </h1>
+          </div>
+          <div class="flex items-center gap-5 text-sm text-brand-100">
+            <div>
+              <p class="font-semibold text-white">Jam Operasional</p>
+              <p>Setiap Hari · 06.00 - 19.00 WIB</p>
+            </div>
+            <a
+              href="#pemesanan"
+              class="inline-flex items-center rounded-full bg-brand-500 px-4 py-2 font-semibold text-white shadow-glow transition hover:bg-brand-400"
+              >Pesan Kunjungan</a
+            >
+          </div>
+        </div>
+        <nav class="flex flex-wrap items-center gap-4 text-sm text-brand-100">
+          <a class="rounded-full bg-white/5 px-4 py-2 font-medium text-white" href="#beranda">Beranda</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#about">About</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#obyek">Obyek Wisata</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#fasilitas">Fasilitas Wisata</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#paket">Paket Wisata</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#museum">Museum Salak</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#pemesanan">Pemesanan</a>
+          <a class="rounded-full bg-white/5 px-4 py-2 hover:text-white" href="#galeri">Galery</a>
+        </nav>
+        <div
+          id="beranda"
+          class="grid gap-8 md:grid-cols-[1.2fr_0.8fr]"
+        >
+          <div class="space-y-6">
+            <p class="text-lg text-brand-100">
+              Sanghyang Dora menghadirkan pengalaman petualangan alam, jelajah budaya,
+              dan seni kuliner pegunungan yang autentik. Rasakan kabut tipis, aroma kopi
+              Lewimunding, dan cerita masyarakat adat dalam satu destinasi.
+            </p>
+            <div class="flex flex-wrap gap-4">
+              <a
+                href="#paket"
+                class="inline-flex items-center rounded-full bg-brand-500 px-6 py-3 font-semibold text-white shadow-glow transition hover:bg-brand-400"
+                >Lihat Paket Wisata</a
+              >
+              <a
+                href="#video"
+                class="inline-flex items-center rounded-full border border-white/30 px-6 py-3 font-semibold text-white hover:border-white"
+                >Tonton Video</a
+              >
+            </div>
+            <dl class="grid gap-6 rounded-3xl border border-white/10 bg-white/5 p-6 sm:grid-cols-3">
+              <div>
+                <dt class="text-xs uppercase tracking-widest text-white/70">Trekking & Jalur</dt>
+                <dd class="mt-2 text-3xl font-semibold text-white">8+</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-widest text-white/70">Event Budaya/Tahun</dt>
+                <dd class="mt-2 text-3xl font-semibold text-white">14</dd>
+              </div>
+              <div>
+                <dt class="text-xs uppercase tracking-widest text-white/70">Review Pengunjung</dt>
+                <dd class="mt-2 text-3xl font-semibold text-white">4.9/5</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="grid gap-4" id="galeri">
+            <div class="grid grid-cols-2 gap-4">
+              <img
+                src="./images/bukit-sanghyang-dora-majalengka-1_169.jpg"
+                alt="Panorama pegunungan Sanghyang Dora"
+                class="h-40 w-full rounded-3xl object-cover"
+              />
+              <img
+                src="./images/whatsapp-image-2025-02-05-at-10-13-45-67a80a7c34777c2ff60217c4.jpg"
+                alt="Aktivitas wisata Sanghyang Dora"
+                class="h-40 w-full rounded-3xl object-cover"
+              />
+            </div>
+            <img
+              src="./images/1a24b42605f03af0082659b608a68f5e.png"
+              alt="Kolase visual wisata Sanghyang Dora"
+              class="h-56 w-full rounded-3xl object-cover"
+            />
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="mx-auto max-w-6xl space-y-20 px-6 py-16">
+      <section
+        id="about"
+        class="rounded-[32px] border border-white/10 bg-white/5 p-8 backdrop-blur"
+      >
+        <div class="grid gap-8 md:grid-cols-2">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">Profil Destinasi</p>
+            <h2 class="mt-2 text-3xl font-semibold text-white">Wisata Sanghyang Dora</h2>
+            <p class="mt-4 text-slate-200">
+              Berlokasi di kaki Gunung Subang, Sanghyang Dora dikenal sebagai destinasi
+              sunrise terbaik di Lewimunding. Kawasan ini dikelilingi bukit hijau,
+              sungai jernih, dan kebun salak berusia puluhan tahun. Pengunjung dapat
+              menikmati jalur hiking ringan, susur sungai, workshop tenun adat, hingga
+              sesi roasting kopi dengan petani lokal.
+            </p>
+          </div>
+          <div class="space-y-4 text-sm text-slate-200">
+            <div class="flex items-center justify-between rounded-3xl bg-white/[0.07] p-4">
+              <p class="font-semibold text-white">Highlight Musim Pancaroba</p>
+              <p>Golden sunrise & kabut tipis lembah</p>
+            </div>
+            <div class="flex items-center justify-between rounded-3xl bg-white/[0.07] p-4">
+              <p class="font-semibold text-white">Program Eco-Community</p>
+              <p>Camping edukasi bersama warga adat</p>
+            </div>
+            <div class="flex items-center justify-between rounded-3xl bg-white/[0.07] p-4">
+              <p class="font-semibold text-white">Kuliner Unggulan</p>
+              <p>Nasi tutug oncom asap, kopi Lewimunding</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="obyek" class="space-y-10">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">Obyek Wisata</p>
+            <h2 class="text-3xl font-semibold text-white">Eksplorasi inti Sanghyang Dora</h2>
+          </div>
+          <p class="max-w-xl text-slate-300">
+            Kolaborasi alam dan budaya lokal menciptakan itinerari fleksibel bagi keluarga,
+            komunitas petualang, maupun pekerja kreatif yang mencari ketenangan.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-3">
+          <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <h3 class="text-xl font-semibold text-white">Sunrise Deck Dora</h3>
+            <p class="mt-2 text-slate-300">
+              Spot deck kayu menghadap lembah, lengkap dengan bar kopi dan telescopic deck
+              untuk memotret jalur matahari.
+            </p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <h3 class="text-xl font-semibold text-white">Jalur Air Sukamaju</h3>
+            <p class="mt-2 text-slate-300">
+              Susur sungai sejernih kristal yang cocok untuk river tubing dan kelas
+              keamanan air untuk keluarga.
+            </p>
+          </article>
+          <article class="rounded-3xl border border-white/10 bg-white/[0.04] p-6">
+            <h3 class="text-xl font-semibold text-white">Kebun Salak Adat</h3>
+            <p class="mt-2 text-slate-300">
+              Tur kebun bersama petani senior, mencicipi salak madu, hingga workshop
+              pengolahan dodol salak khas.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="fasilitas" class="space-y-10">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">
+              Fasilitas Wisata
+            </p>
+            <h2 class="text-3xl font-semibold text-white">Kenyamanan modern di tengah alam</h2>
+          </div>
+          <p class="max-w-xl text-slate-300">
+            Semua fasilitas dirancang modular agar nyaman untuk rombongan besar sekaligus
+            traveler solo.
+          </p>
+        </div>
+        <div class="grid gap-6 md:grid-cols-4">
+          <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+            <p class="text-lg font-semibold text-white">Sky Cabin</p>
+            <p class="text-slate-300">Glamping modul kaca dengan heater & koneksi Wi-Fi.</p>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+            <p class="text-lg font-semibold text-white">Mushola & Bale</p>
+            <p class="text-slate-300">Area ibadah nyaman plus balai kreativitas komunitas.</p>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+            <p class="text-lg font-semibold text-white">Sarana Outdoor</p>
+            <p class="text-slate-300">Api unggun, amphitheater mini, panggung pertunjukan.</p>
+          </div>
+          <div class="rounded-3xl border border-white/10 bg-white/[0.04] p-5">
+            <p class="text-lg font-semibold text-white">Majalengka Taste Lab</p>
+            <p class="text-slate-300">Warung gastronomi nusantara & kelas mixology jamu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="paket" class="space-y-6">
+        <div class="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">Daftar Paket</p>
+            <h2 class="text-3xl font-semibold text-white">Paket wisata unggulan Sanghyang Dora</h2>
+          </div>
+          <a
+            href="#pemesanan"
+            class="inline-flex items-center rounded-full bg-brand-500 px-6 py-3 font-semibold text-white shadow-glow transition hover:bg-brand-400"
+            >Request Custom Trip</a
+          >
+        </div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="rounded-[32px] border border-white/10 bg-white/[0.04] p-4">
+            <img
+              src="./images/images.jpg"
+              alt="Paket trekking kabut Sanghyang Dora"
+              class="h-56 w-full rounded-[28px] object-cover"
+            />
+            <div class="space-y-3 p-4">
+              <div class="flex items-center justify-between text-sm text-brand-100">
+                <p>Januari - April 2025</p>
+                <span class="rounded-full bg-brand-500/20 px-3 py-1 text-xs font-semibold text-brand-200"
+                  >Promo Sunrise</span
+                >
+              </div>
+              <h3 class="text-2xl font-semibold text-white">
+                Paket Mendaki Bukit Sanghyang & River Tubing Sukamaju
+              </h3>
+              <p class="text-slate-300">
+                Trekking ringan 2 jam, sarapan kopi Lewimunding, river tubing sejauh 4 km,
+                serta dokumentasi drone.
+              </p>
+              <p class="text-lg font-semibold text-brand-200">Harga Promo mulai 650rb/pax</p>
+            </div>
+          </article>
+          <article class="rounded-[32px] border border-white/10 bg-white/[0.04] p-4">
+            <img
+              src="./images/whatsapp-image-2025-02-05-at-10-13-45-67a80a7c34777c2ff60217c4.jpg"
+              alt="Paket budaya adat Sanghyang Dora"
+              class="h-56 w-full rounded-[28px] object-cover"
+            />
+            <div class="space-y-3 p-4">
+              <div class="flex items-center justify-between text-sm text-brand-100">
+                <p>Mei - Oktober 2025</p>
+                <span class="rounded-full bg-brand-500/20 px-3 py-1 text-xs font-semibold text-brand-200"
+                  >Cultural Retreat</span
+                >
+              </div>
+              <h3 class="text-2xl font-semibold text-white">
+                Paket Budaya Adat & Workshop Kopi Lewimunding
+              </h3>
+              <p class="text-slate-300">
+                Staycation 2 malam di sky cabin, kelas roasting kopi, tur kebun salak, dan
+                pentas kesenian Lengser malam.
+              </p>
+              <p class="text-lg font-semibold text-brand-200">Mulai 980rb/pax (min. 4 orang)</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section
+        id="museum"
+        class="rounded-[32px] border border-white/10 bg-gradient-to-r from-slate-900/80 to-brand-900/40 p-8"
+      >
+        <div class="grid gap-8 md:grid-cols-2">
+          <div>
+            <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">
+              Museum Salak
+            </p>
+            <h2 class="mt-3 text-3xl font-semibold text-white">Museum Salak Sanghyang Heritage</h2>
+            <p class="mt-4 text-slate-200">
+              Museum mini ini merangkum arsip perjalanan komoditas salak Majalengka sejak
+              1920-an, lengkap dengan koleksi alat tradisional, dokumentasi foto lawas,
+              hingga perpustakaan mini bagi peneliti pangan lokal.
+            </p>
+          </div>
+          <ul class="space-y-4 text-slate-200">
+            <li class="flex items-center justify-between rounded-3xl bg-white/[0.07] px-4 py-3">
+              <span>Tur museum + pencicipan dodol salak</span>
+              <span class="text-brand-100">Setiap 10.00 & 14.00 WIB</span>
+            </li>
+            <li class="flex items-center justify-between rounded-3xl bg-white/[0.07] px-4 py-3">
+              <span>Workshop konservasi benih salak</span>
+              <span class="text-brand-100">Kapasitas 12 peserta</span>
+            </li>
+            <li class="flex items-center justify-between rounded-3xl bg-white/[0.07] px-4 py-3">
+              <span>Ruang multimedia AR</span>
+              <span class="text-brand-100">Cerita digital 360°</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        id="video"
+        class="grid gap-8 rounded-[32px] border border-white/10 bg-white/5 p-8 md:grid-cols-2"
+      >
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">
+            Video Promosi
+          </p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">360° Virtual Journey</h2>
+          <p class="mt-4 text-slate-200">
+            Rasakan sensasi golden hour Sanghyang Dora melalui video dokumentasi profesional,
+            lengkap dengan narasi budaya Lewimunding. Video dapat dijadikan teaser acara
+            komunitas maupun materi promosi internal Anda.
+          </p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-300">
+            <li>✔ Footage udara resolusi 4K</li>
+            <li>✔ Highlight aktivitas trekking, river tubing, dan kuliner</li>
+            <li>✔ Subtitle bilingual (ID-EN)</li>
+          </ul>
+        </div>
+        <div class="aspect-video w-full overflow-hidden rounded-3xl shadow-glow">
+          <iframe
+            class="h-full w-full"
+            src="https://www.youtube.com/embed/-ngDHvKpTd0"
+            title="Promo Wisata Sanghyang Dora"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+
+      <section
+        id="pemesanan"
+        class="grid gap-8 rounded-[32px] border border-white/10 bg-gradient-to-br from-brand-900/80 to-slate-900/80 p-8 md:grid-cols-2"
+      >
+        <div>
+          <p class="text-sm font-semibold uppercase tracking-[0.35em] text-brand-200">
+            Pemesanan & Informasi
+          </p>
+          <h2 class="mt-3 text-3xl font-semibold text-white">Kurasi perjalanan sesuai tim Anda</h2>
+          <p class="mt-4 text-slate-200">
+            Tim experience host kami siap merancang kegiatan khusus untuk outing kantor,
+            retreat komunitas, hingga intimate wedding.
+          </p>
+          <div class="mt-6 space-y-4 text-sm text-white">
+            <p>📞 Hotline: +62 821-4110-1095</p>
+            <p>✉️ Email: visit@sanghyangdora.id</p>
+            <p>📍 Basecamp: Jl. Panorama Dora No. 7, Desa Parungjaya, Lewimunding</p>
+          </div>
+        </div>
+        <form class="space-y-4">
+          <div>
+            <label class="text-sm text-white/70">Nama Lengkap</label>
+            <input
+              type="text"
+              placeholder="Contoh: Lintang Arya"
+              class="mt-1 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 focus:border-brand-300 focus:outline-none"
+              required
+            />
+          </div>
+          <div class="grid gap-4 md:grid-cols-2">
+            <div>
+              <label class="text-sm text-white/70">Tanggal Kedatangan</label>
+              <input
+                type="date"
+                class="mt-1 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 focus:border-brand-300 focus:outline-none"
+                required
+              />
+            </div>
+            <div>
+              <label class="text-sm text-white/70">Jumlah Tamu</label>
+              <input
+                type="number"
+                min="1"
+                placeholder="10 Orang"
+                class="mt-1 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 focus:border-brand-300 focus:outline-none"
+                required
+              />
+            </div>
+          </div>
+          <div>
+            <label class="text-sm text-white/70">Paket Yang Dipilih</label>
+            <select
+              class="mt-1 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white focus:border-brand-300 focus:outline-none"
+              required
+            >
+              <option class="bg-slate-900 text-white" value="">Pilih Paket</option>
+              <option class="bg-slate-900 text-white">Trekking & River Tubing</option>
+              <option class="bg-slate-900 text-white">Budaya Adat & Workshop Kopi</option>
+              <option class="bg-slate-900 text-white">Custom Corporate Retreat</option>
+            </select>
+          </div>
+          <div>
+            <label class="text-sm text-white/70">Catatan Tambahan</label>
+            <textarea
+              rows="3"
+              placeholder="Tuliskan kebutuhan khusus tim Anda..."
+              class="mt-1 w-full rounded-2xl border border-white/20 bg-white/10 px-4 py-3 text-white placeholder:text-white/40 focus:border-brand-300 focus:outline-none"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="w-full rounded-full bg-white px-6 py-3 text-center font-semibold text-slate-900 transition hover:bg-brand-200"
+          >
+            Kirim Request Kunjungan
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="border-t border-white/10 bg-slate-950/90 py-10 text-center text-sm text-slate-400">
+      <p>&copy; 2025 Desa Wisata Sanghyang Dora · Lewimunding Majalengka</p>
+      <p class="mt-1">Didesain dengan Tailwind CSS sebagai bagian dari tugas Proyek J.620100.005.02</p>
+    </footer>
+  </body>
+</html>
